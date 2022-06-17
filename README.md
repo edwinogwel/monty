@@ -1,16 +1,26 @@
 ## MONTY
 
 ### The Monty Language
-Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. **The goal of this project is to create an interpreter for Monty ByteCodes files**
+**Monty 0.98 is a scripting language** that is first compiled into **Monty** byte codes (Just like Python). <br> It relies on a unique stack, with specific instructions to manipulate it. **The goal of this project is to <br> create an interpreter for Monty ByteCodes files**.
 
-### Compilation
-- ```gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty```
+<img src="https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" width="650" height="auto">
 
+---
 ### The monty program
-* Usage: ```monty file```
-  - where ```file``` is the path to the file containing Monty byte code
+**Usage**: ```monty file``` <br>
+- Where ```file``` is the path to the file containing Monty byte code
+---
+### Installation
+```
+git clone https://github.com/edwinogwel/monty
+```
+### Compilation
+```
+gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
+```
 
 ### Tasks
+---
 0. Implement the push and pall opcodes <br>
    - ```push``` pushes an element to the stack
    - ```pall``` prints all the values on the stack, starting from the top of the stack
@@ -31,7 +41,7 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 8. Implement the mul opcode
    - ```mul``` multiplies the second top element of the stack with the top element of the stack
 9. Implement the mod opcode
-   - ```mod``` computes the rest of the division of the second top element of the stack by the top element
+   - ```mod``` computes the remainder of the second top element of the stack by the top element
 10. Comments
     - When the first non-space char of a line is ```#```, treat the line as a comment
 11. Implement the pchar opcode
@@ -50,3 +60,4 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 18. Write a Brainf*ck script multiplies two digits given by the user
 19. Write a Brainf*ck script multiplies two digits given by the user
     - And print the result, followed by a new line
+---
