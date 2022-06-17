@@ -7,41 +7,46 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 - ```gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty```
 
 ### The monty program
-* Usage: ```monty file``` <br>
+* Usage: ```monty file```
   - where ```file``` is the path to the file containing Monty byte code
 
 ### Tasks
-0. Implement the ```push``` and ```pall``` opcodes <br>
-   - ```push``` pushes an element to the stack <br>
+0. Implement the push and pall opcodes <br>
+   - ```push``` pushes an element to the stack
    - ```pall``` prints all the values on the stack, starting from the top of the stack
-1. Implement the ```pint``` opcode <br>
+1. Implement the pint opcode
    - ```pint``` prints the value at the top of the stack
-2. Implement the ```pop``` opcode <br>
+2. Implement the pop opcode
    - ```pop``` removes the top element of the stack
-3. Implement the ```swap``` opcode <br>
+3. Implement the swap opcode
    - ```swap``` swaps the top two elements of the stack
-4. Implement the add opcode 
-5. Implement the nop opcode
-6. Implement the sub opcode
-7. Implement the div opcode
-8. Implement the mul opcode
-9. Implement the mod opcode
-   - ```mod``` computes the rest of the division of the second top element of the stack by the top element
-11. Comments
+4. Implement the add opcode
+   - ```add``` adds the top two elements of the stack
+6. Implement the nop opcode
+   - ```nop``` doesn't do anything
+7. Implement the sub opcode
+8. - ```sub``` subtracts the top element of the stack from the second top element of the stack
+9. Implement the div opcode
+   - ```div``` divides the second top element of the stack by the top element of the stack
+10. Implement the mul opcode
+    - ```mul``` multiplies the second top element of the stack with the top element of the stack
+11. Implement the mod opcode
+    - ```mod``` computes the rest of the division of the second top element of the stack by the top element
+12. Comments
     - When the first non-space char of a line is ```#```, treat the line as a comment
-12. Implement the ```pchar``` opcode
+13. Implement the pchar opcode
     - ```pchar``` prints the char at the top of the stack
-13. Implement the ```pstr``` opcode
+14. Implement the pstr opcode
     - ```pstr``` prints the string starting at the top of the stack
-14. Implement the ```rotl``` opcode
+15. Implement the rotl opcode
     - ```rotl``` rotates the stack to the top
-15. Implement the ```rotr``` opcode
+16. Implement the rotr opcode
     - ```rotr``` rotates the stack to the bottom
-16. Implement the ```stack``` and ```queue``` opcodes
+17. Implement the stack and ```queue``` opcodes
     - ```stack``` sets the format of the data to a stack (LIFO)
     - ```queue``` sets the format of the data to a queue (FIFO)
-17. Write a Brainf*ck script that prints ```School```
-18. Write a Brainf*ck script that adds two digits given by the user
-19. Write a Brainf*ck script multiplies two digits given by the user
+18. Write a Brainf*ck script that prints ```School```
+19. Write a Brainf*ck script that adds two digits given by the user
 20. Write a Brainf*ck script multiplies two digits given by the user
+21. Write a Brainf*ck script multiplies two digits given by the user
     - And print the result, followed by a new line
